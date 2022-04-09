@@ -4,7 +4,7 @@
 
 layout: page
 title: Data Source - Csv File
-permalink: /data-sources/Csv-File/
+permalink: /files/data-sources/Csv-File/
 ---
 
 ## Basic Information
@@ -15,6 +15,6 @@ permalink: /data-sources/Csv-File/
  include data-sources/info.html
     data-source-name="Csv File"
     data-source-pattern-match="My*Custom.Csv"
-    data-source-save-link="/data-sources/Csv-File/"
-    data-source-field-link="/data-sources/Csv-File/fields"
+    data-source-save-link="/files/data-sources/Csv-File/"
+    data-source-field-link="/files/data-sources/Csv-File/fields"
 %}

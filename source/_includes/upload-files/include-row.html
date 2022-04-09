@@ -1,19 +1,16 @@
 <script>
     function loadHtmlElements() {
-        const uploadFiles = document.getElementById('fl-upload-files');
+        const btnAddFiles = document.getElementById('btn-add-files');
+        const fsSelectFiles = document.getElementById('fs-select-files');
         const fileDetails = document.getElementsByTagName('tbody')[0];
         const lblTotalFiles = document.getElementById('lbl-total-files');
         const tplFileDetails = document.getElementById('tpl-file-details');
         const replaceTpl = (name, size) => tplFileDetails.innerHTML.replace("{name}", name).replace("{size}", size);
         const updateFilesNumber = () => lblTotalFiles.innerHTML = fileDetails.children.length;
 
-        uploadFiles.addEventListener("change", function fnFileDetails() {
-            if (uploadFiles.files.length > 0) {
-                for (var i = 0; i < uploadFiles.files.length; i++) {
-                    const file = uploadFiles.files.item(i);
-                    fileDetails.innerHTML += replaceTpl(file.name, file.size);
-                }
-            }
+        btnAddFiles.addEventListener("click", function fnFileDetails() {
+            [...fsSelectFiles.files]
+                .forEach(file => fileDetails.innerHTML += replaceTpl(file.name, file.size));
             updateFilesNumber();
             addRemoveHandler();
         });

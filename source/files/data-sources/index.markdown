@@ -4,7 +4,7 @@
 
 layout: page
 title: Data Sources
-permalink: /data-sources/
+permalink: files/data-sources
 ---
 
 Create data sources for your files, based on a file layout.
@@ -17,7 +17,7 @@ Change the final value of fields using the transformations.
 
 | Name               | File Pattern   | # Fields    | Actions               |
 | ------------------ | -------------- | ----------- | :-------------------: |
-| Csv File           | File*Name.csv  | Title       | [Edit]({{ '/data-sources/Csv-File' }}) - [Delete]() |
-| Fixed Length       | File*Name.txt  | Text        | [Edit]({{ '/data-sources/Fixed-Length'  | prepend: site.baseurl }}) - [Delete]() |
-| Excel File         | File*Name.xls  | Text        | [Edit]({{ '/data-sources/Excel-File'  | prepend: site.baseurl }}) - [Delete]() |
-| Newer Excel File 2 | File*Name.xlsx | Text        | [Edit]({{ '/data-sources/Newer-Excel-File-2'  | prepend: site.baseurl }}) - [Delete]() |
+| Csv File           | File*Name.csv  | Title       | [Edit]({{ '/files/data-sources/Csv-File' }}) - [Delete]() |
+| Fixed Length       | File*Name.txt  | Text        | [Edit]({{ '/files/data-sources/Fixed-Length'  | prepend: site.baseurl }}) - [Delete]() |
+| Excel File         | File*Name.xls  | Text        | [Edit]({{ '/files/data-sources/Excel-File'  | prepend: site.baseurl }}) - [Delete]() |
+| Newer Excel File 2 | File*Name.xlsx | Text        | [Edit]({{ '/files/data-sources/Newer-Excel-File-2'  | prepend: site.baseurl }}) - [Delete]() |

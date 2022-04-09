@@ -4,10 +4,13 @@
 
 layout: page
 title: Upload Files
-permalink: /upload-files/
+permalink: files/uploads/
 ---
 
 Here you can upload you file to be processed
+
+> Note: If you leave the page you will loose the current uploads.
+
 
 {% include styles/form-upload.html %}
 {% include upload-files/upload.html %}
