@@ -1,0 +1,13 @@
+<form action="" method="post">
+  <label for="data-source-name">Name:</label><br />
+  <input type="text" id="data-source-name" value="{{ include.data-source-name }}" />
+  <br /><br />
+
+  <label for="data-source-pattern-match">File Pattern:</label><br />
+  <input type="text" id="data-source-pattern-match" value="{{ include.data-source-pattern-match }}" />
+  <br /><br />
+
+  <br />
+  <a href="{{ include.data-source-save-link }}">Save</a>
+  <a href="{{ include.data-source-field-link }}">Data Source Fields</a>
+</form>
