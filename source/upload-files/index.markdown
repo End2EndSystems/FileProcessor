@@ -9,11 +9,18 @@ permalink: /upload-files/
 
 Here you can upload you file to be processed
 
-Here goes a input-file to upload files with a button to upload
+{% include styles/form-upload.html %}
+{% include upload-files/upload.html %}
 
-| fFile name         | Status         | Percentual    | Last Errors                 |
-| ------------------ | -------------- | :-----------: | --------------------------- |
-| Csv File           | Validated      | 100%          | No error                    |
-| Fixed Length       | Failed         | 100%          | No Data Source Found        |
-| Excel File         | Processing     |  45%          | Row #15 with error          |
-| Newer Excel File 2 | Processing     |  12%          | Row #15 Field #5 with error |
+| File name          | Status         | Percentual    | Last Errors                 | Action      |
+| ------------------ | -------------- | :-----------: | --------------------------- | :---------: |
+| Csv File           | Validated      | 100%          | No errors                   | [Remove](#) |
+| Fixed Length       | Failed         | 100%          | No Data Source Found        | [Remove](#) |
+| Excel File         | Processing     |  45%          | Row #15 with error          | [Remove](#) |
+| Newer Excel File 2 | Processing     |  12%          | Row #15 Field #5 with error | [Remove](#) |
+
+<script type="text-html" id="tpl-file-details">
+{% include upload-files/row-template.html %}
+</script>
+
+{% include upload-files/include-row.html %}

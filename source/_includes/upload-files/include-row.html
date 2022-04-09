@@ -1,0 +1,35 @@
+<script>
+    function loadHtmlElements() {
+        const uploadFiles = document.getElementById('fl-upload-files');
+        const fileDetails = document.getElementsByTagName('tbody')[0];
+        const lblTotalFiles = document.getElementById('lbl-total-files');
+        const tplFileDetails = document.getElementById('tpl-file-details');
+        const replaceTpl = (name, size) => tplFileDetails.innerHTML.replace("{name}", name).replace("{size}", size);
+        const updateFilesNumber = () => lblTotalFiles.innerHTML = fileDetails.children.length;
+
+        uploadFiles.addEventListener("change", function fnFileDetails() {
+            if (uploadFiles.files.length > 0) {
+                for (var i = 0; i < uploadFiles.files.length; i++) {
+                    const file = uploadFiles.files.item(i);
+                    fileDetails.innerHTML += replaceTpl(file.name, file.size);
+                }
+            }
+            updateFilesNumber();
+            addRemoveHandler();
+        });
+
+        function addRemoveHandler() {
+            const links = document.querySelectorAll("tbody a");
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", function fnFileDetails(e) {
+                    const tr = e.currentTarget.parentElement.parentElement;
+                    fileDetails.removeChild(tr);
+                    updateFilesNumber();
+                    return false;
+                });
+            }
+        }
+        addRemoveHandler();
+    }
+    loadHtmlElements();
+</script>
