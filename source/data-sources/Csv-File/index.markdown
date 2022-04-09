@@ -9,7 +9,7 @@ permalink: /data-sources/Csv-File/
 
 ## Basic Information
 
-{% include styles/form-input-custom.html %}
+{% include styles/form-input.html %}
 
 {%
  include data-sources/info.html
