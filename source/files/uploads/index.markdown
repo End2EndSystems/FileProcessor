@@ -9,11 +9,17 @@ permalink: files/uploads/
 
 Here you can upload you file to be processed
 
-> Note: If you leave the page you will loose the current uploads.
-
+> Important
+>
+> If you leave this upload page before send the files (using the 'Add files to upload button')
+> you will lost the current work, and the process will start again
+> 
+> If after the processing files you do not click on 
 
 {% include styles/form-upload.html %}
 {% include upload-files/upload.html %}
+
+{% include upload-files/proceed-button.html %}
 
 | File name          | Status         | Percentual    | Last Errors                 | Action      |
 | ------------------ | -------------- | :-----------: | --------------------------- | :---------: |
@@ -21,6 +27,8 @@ Here you can upload you file to be processed
 | Fixed Length       | Failed         | 100%          | No Data Source Found        | [Remove](#) |
 | Excel File         | Processing     |  45%          | Row #15 with error          | [Remove](#) |
 | Newer Excel File 2 | Processing     |  12%          | Row #15 Field #5 with error | [Remove](#) |
+
+{% include upload-files/proceed-button.html %}
 
 <script type="text-html" id="tpl-file-details">
 {% include upload-files/row-template.html %}
