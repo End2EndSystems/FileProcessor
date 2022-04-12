@@ -1,3 +1,6 @@
-<button type="button" class="btn btn-outline-primary">
+{%- assign btn-type = include.type | default: "button" -%}
+{%- assign action = include.form-action | default: "" -%}
+{%- assign form = include.form | default: "" -%}
+<button type="{{ btn-type }}" class="btn btn-outline-primary"{% unless action==empty %} formaction="{{ action }}"{% endunless %}{% unless form==empty %} form="{{ form }}" {% endunless %}>
     <i class="bi {{ include.icon }}"></i> {{ include.label }}
 </button>
