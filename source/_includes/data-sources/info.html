@@ -1,13 +1,22 @@
-<form action="" method="post">
-  <label for="data-source-name">Name:</label><br />
-  <input type="text" id="data-source-name" value="{{ include.data-source-name }}" />
-  <br /><br />
+<form>
+  <div class="mb-3">
+    <label for="data-source-name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="data-source-name" aria-describedby="data-source-name-help">
+    <div id="data-source-name-help" class="form-text">The data source name. It wil check for unique names.</div>
+    <div class="valid-feedback"> Looks good! </div>
+  </div>
+  <div class="mb-3">
+    <label for="data-source-file-pattern" class="form-label">File Pattern</label>
+    <input type="text" class="form-control" id="data-source-file-pattern"
+      aria-describedby="data-source-file-pattern-help">
+    <div id="data-source-file-pattern-help" class="form-text">The data source file pattern. This is used to check the
+      file uploaded.</div>
+    <div class="valid-feedback"> Looks good! </div>
+  </div>
+  <div class="mb-3">
+    {% include data-sources/info-type-selector.html %}
+  </div>
 
-  <label for="data-source-pattern-match">File Pattern:</label><br />
-  <input type="text" id="data-source-pattern-match" value="{{ include.data-source-pattern-match }}" />
-  <br /><br />
-
-  <br />
-  <a href="{{ include.data-source-save-link }}">Save</a>
-  <a href="{{ include.data-source-field-link }}">Data Source Fields</a>
+  {% include button.html icon="bi-file-earmark-check" label="Save Data Source Info" %}
+  {% include button.html icon="bi-file-earmark-ruled" label="Edit Data Source Fields" %}
 </form>

@@ -13,11 +13,16 @@ Work with CSV, Fixed Length or Excel files.
 
 Change the final value of fields using the transformations.
 
-[Create New]({{ 'print/en-us'  | prepend: site.baseurl }}){: .button }
+{%
+ include button.html
+ icon="bi-file-earmark-plus"
+ label="Add New Data Source"
+%}
 
-| Name               | File Pattern   | # Fields    | Actions               |
-| ------------------ | -------------- | ----------- | :-------------------: |
-| Csv File           | File*Name.csv  | Title       | [Edit]({{ '/files/data-sources/Csv-File' }}) - [Delete]() |
-| Fixed Length       | File*Name.txt  | Text        | [Edit]({{ '/files/data-sources/Fixed-Length'  | prepend: site.baseurl }}) - [Delete]() |
-| Excel File         | File*Name.xls  | Text        | [Edit]({{ '/files/data-sources/Excel-File'  | prepend: site.baseurl }}) - [Delete]() |
-| Newer Excel File 2 | File*Name.xlsx | Text        | [Edit]({{ '/files/data-sources/Newer-Excel-File-2'  | prepend: site.baseurl }}) - [Delete]() |
+{% include data-sources/list.html %}
+
+{%
+ include button.html
+ icon="bi-file-earmark-plus"
+ label="Add New Data Source"
+%}

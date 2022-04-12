@@ -1,0 +1,7 @@
+{%- assign url = include.url | default: # -%}
+<a href="{{ url }}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+    {%- if include.icon -%}
+    <i class="bi {{ include.icon }}"></i>
+    {%- endif -%}
+    {{ include.label }}
+</a>

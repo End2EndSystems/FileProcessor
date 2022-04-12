@@ -15,8 +15,13 @@
                         <p>Add transformations for the fields.</p>
                         </p>
                     </div>
-                    <a href="{{ 'files/data-sources' | prepend: site.baseurl }}" class="btn btn-primary">Access Data
-                        Sources</a>
+                    {%- assign url = 'files/data-sources' | prepend: site.baseurl -%}
+                    {%
+                        include link-button.html
+                        icon="bi-file-earmark"
+                        label="Access Data Sources"
+                        url=url
+                    %}
                 </div>
             </div>
             <div class="col">
@@ -35,8 +40,13 @@
                         <p>Follow the process, see error messages.</p>
                         </p>
                     </div>
-                    <a href="{{ 'files/uploads' | prepend: site.baseurl }}" class="btn btn-primary">
-                        Access Upload Files</a>
+                    {%- assign url = 'files/uploads' | prepend: site.baseurl -%}
+                    {%
+                        include link-button.html
+                        icon="bi-cloud-upload"
+                        label="Access Upload Files"
+                        url=url
+                    %}
                 </div>
             </div>
             <div class="col">
@@ -52,8 +62,13 @@
                         <p>Download a final result in a csv file.</p>
                         </p>
                     </div>
-                    <a href="{{ 'files/results' | prepend: site.baseurl }}" class="btn btn-primary">
-                        Access Results</a>
+                    {%- assign url = 'files/results' | prepend: site.baseurl -%}
+                    {%
+                        include link-button.html
+                        icon="bi-file-earmark-check"
+                        label="Access Results"
+                        url=url
+                    %}
                 </div>
             </div>
         </div>

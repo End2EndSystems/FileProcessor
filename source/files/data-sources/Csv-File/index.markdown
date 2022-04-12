@@ -14,7 +14,7 @@ permalink: /files/data-sources/Csv-File/
 {%
  include data-sources/info.html
     data-source-name="Csv File"
-    data-source-pattern-match="My*Custom.Csv"
+    data-source-file-pattern="My*Custom.Csv"
     data-source-save-link="/files/data-sources/Csv-File/"
     data-source-field-link="/files/data-sources/Csv-File/fields"
 %}

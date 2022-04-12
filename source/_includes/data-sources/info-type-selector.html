@@ -1,0 +1,47 @@
+<div class="accordion bg-transparent" id="data-source-type-selector">
+    <div class="accordion-item bg-transparent">
+        <h2 class="accordion-header bg-transparent" id="data-source-csv">
+            <button class="accordion-button bg-dark text-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#data-source-csv-collapse" aria-expanded="true"
+                aria-controls="data-source-csv-collapse">
+                CSV
+            </button>
+        </h2>
+        <div id="data-source-csv-collapse" class="accordion-collapse collapse show" aria-labelledby="data-source-csv"
+            data-bs-parent="#data-source-type-selector">
+            <div class="accordion-body">
+                other fields for CSV
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-transparent">
+        <h2 class="accordion-header bg-transparent" id="data-source-excel">
+            <button class="accordion-button bg-dark text-secondary collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#data-source-excel-collapse" aria-expanded="false"
+                aria-controls="data-source-excel-collapse">
+                Excel
+            </button>
+        </h2>
+        <div id="data-source-excel-collapse" class="accordion-collapse collapse" aria-labelledby="data-source-excel"
+            data-bs-parent="#data-source-type-selector">
+            <div class="accordion-body">
+                Excel form option
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-transparent">
+        <h2 class="accordion-header bg-transparent" id="data-source-excel-fixed-length">
+            <button class="accordion-button bg-dark text-secondary collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#data-source-fixed-length-collapse" aria-expanded="false"
+                aria-controls="data-source-fixed-length-collapse">
+                Fixed Length
+            </button>
+        </h2>
+        <div id="data-source-fixed-length-collapse" class="accordion-collapse collapse bg-transparent"
+            aria-labelledby="data-source-excel-fixed-length" data-bs-parent="#data-source-type-selector">
+            <div class="accordion-body">
+                Fixed length files does not has extra fields.
+            </div>
+        </div>
+    </div>
+</div>

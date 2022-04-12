@@ -1,0 +1,39 @@
+<table class="table table-dark table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>File Pattern</th>
+      <th>File Type</th>
+      <th style="text-align: center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Csv File</td>
+      <td>File*Name.csv</td>
+      <td>Title</td>
+      <td style="text-align: center">
+        {% include link-button.html icon="bi-file-earmark-text" label="Edit" url="Csv-File" %}
+        {% include link-button.html icon="bi-file-earmark-excel" label="Delete" %}
+      </td>
+    </tr>
+    <tr>
+      <td>Fixed Length</td>
+      <td>File*Name.txt</td>
+      <td>Text</td>
+      <td style="text-align: center">
+        {% include link-button.html icon="bi-file-earmark-text" label="Edit" url="Fixed-Length" %}
+        {% include link-button.html icon="bi-file-earmark-excel" label="Delete" %}
+      </td>
+    </tr>
+    <tr>
+      <td>Excel File</td>
+      <td>File*Name.xls</td>
+      <td>Text</td>
+      <td style="text-align: center">
+        {% include link-button.html icon="bi-file-earmark-text" label="Edit" url="Excel-File" %}
+        {% include link-button.html icon="bi-file-earmark-excel" label="Delete" %}
+      </td>
+    </tr>
+  </tbody>
+</table>
