@@ -1,0 +1,20 @@
+<div class="mb-3">
+    <label for="data-source-excel-sheet-name" class="form-label">Sheet Name</label>
+    <input type="text" class="form-control" id="data-source-excel-sheet-name" name="data-source-excel-sheet-name"
+        aria-describedby="data-source-excel-sheet-name-help" />
+    <div id="data-source-excel-sheet-name-help" class="form-text">
+        The name of the sheet to look for in the spread-sheet.
+    </div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+<div class="mb-3">
+    <label for="data-source-excel-start-row" class="form-label">Start Row</label>
+    <input type="number" class="form-control" id="data-source-excel-start-row" name="data-source-excel-start-row"
+        aria-describedby="data-source-excel-start-row-help" value="," required />
+    <div id="data-source-excel-start-row-help" class="form-text">
+        The number of the row to start read.
+    </div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+{% include button.html icon="bi-file-earmark-check" label="Save Data Source Info as Excel" type="submit" form-action="Excel" %}
+{% include button.html icon="bi-file-earmark-ruled" label="Edit Data Source Fields" %}

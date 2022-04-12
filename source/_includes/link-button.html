@@ -1,5 +1,7 @@
 {%- assign url = include.url | default: # -%}
-<a href="{{ url }}" class="btn btn-outline-primary" tabindex="-1" role="button" >
+
+<a href="{{ url }}" class="btn btn-outline-primary {% unless classes==empty %} {{ include.classes }}{% endunless %}" tabindex="-1" role="button" 
+{% unless include.extra-attributes == empty %} {{ include.extra-attributes }}{% endunless %}>
     {%- if include.icon -%}
     <i class="bi {{ include.icon }}"></i>
     {%- endif -%}

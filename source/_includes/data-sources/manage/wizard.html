@@ -1,0 +1,33 @@
+<!-- <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+        {% include link-button.html classes="nav-link active" icon="bi-file-earmark" label="Basic information" %}
+    </li>
+    <li class="nav-item">
+        {% include link-button.html classes="nav-link" icon="bi-file-earmark" label="Fields" url="fields" %}
+    </li>
+    <li class="nav-item">
+        {% include link-button.html classes="nav-link" icon="bi-file-earmark" label="Ignore Row" url="Ignore Row" %}
+    </li>
+</ul> -->
+
+<ul class="nav nav-pills nav-justified" id="data-source-configuration" role="tablist">
+    <li class="nav-item" role="presentation">
+        {% include link-button.html classes="nav-link active" icon="bi-file-earmark" label="Basic information" extra-attributes='id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+        role="tab" aria-controls="home" aria-selected="true"' %}
+    </li>
+    <li class="nav-item" role="presentation">
+        {% include link-button.html classes="nav-link" icon="bi-file-earmark-ruled" label="Form Fields" extra-attributes='id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+        role="tab" aria-controls="profile" aria-selected="false"' %}
+    </li>
+    <li class="nav-item" role="presentation">
+        {% include link-button.html classes="nav-link" icon="bi-file-earmark-minus" label="Ignore Rows" extra-attributes='id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+        role="tab" aria-controls="contact" aria-selected="false"' %}
+    </li>
+</ul>
+<div class="tab-content py-3" id="data-source-configuration-tabs">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        {% include data-sources/manage/basic-info.html %}
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">form fields</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">form ignore rows</div>
+</div>
