@@ -3,18 +3,16 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Fields
+title: Data Source - Csv File - Fields
 permalink: /files/data-sources/Csv-File/Fields
 ---
 
-Create fields for your layout.
+{% include data-sources/manage/fields/wizard-data-source-fields.html %}
 
-Apply transformations
+<div class="tab-content py-3" id="data-source-configuration-tabs">
+    <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="basic-info-tab">
+        {% include data-sources/manage/fields/list.html %}
+    </div>
+</div>
 
-
-| Name        | File Pattern   | # Fields    | Actions               |
-| ------------| -------------- | ----------- | :-------------------: |
-| File Name 1 | File*Name.csv  | Title       | [Edit]({{ '/files/data-sources/Csv-File' }}) - [Delete]() |
-| File Name 2 | File*Name.txt  | Text        | [Edit]({{ '/files/data-sources/Fixed-Length'  | prepend: site.baseurl }}) - [Delete]() |
-| File Name 3 | File*Name.xls  | Text        | [Edit]({{ '/files/data-sources/Excel-File'  | prepend: site.baseurl }}) - [Delete]() |
-| File Name 4 | File*Name.xlsx | Text        | [Edit]({{ '/files/data-sources/Newer-Excel-File-2'  | prepend: site.baseurl }}) - [Delete]() |
+{% include link-button.html icon="bi-arrow-left-short" label="Return to Data Sources" url="/files/data-sources" %}

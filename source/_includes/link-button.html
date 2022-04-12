@@ -1,9 +1,10 @@
-{%- assign url = include.url | default: # -%}
+{%- assign url = include.url | default: "/#" | prepend: site.baseurl -%}
+{%- assign classes = include.classes | prepend: "btn btn-outline-primary " -%}
+{%- assign extra-attributes = include.extra-attributes -%}
 
-<a href="{{ url }}" class="btn btn-outline-primary {% unless classes==empty %} {{ include.classes }}{% endunless %}" tabindex="-1" role="button" 
-{% unless include.extra-attributes == empty %} {{ include.extra-attributes }}{% endunless %}>
-    {%- if include.icon -%}
-    <i class="bi {{ include.icon }}"></i>
-    {%- endif -%}
+
+<a href="{{ url }}" class="{{ classes }}" role="button" {% unless extra-attributes==empty %} {{
+    extra-attributes }}{% endunless %}>
+    {% unless include.icon == empty %}<i class="bi {{ include.icon }}"></i>{% endunless %}
     {{ include.label }}
 </a>

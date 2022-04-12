@@ -1,0 +1,40 @@
+<form class="row g-3">
+    <div class="col-4">
+        <label for="data-source-field-name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="data-source-field-name" name="data-source-field-name"
+            aria-describedby="data-source-field-name-help">
+        <div id="data-source-field-name-help" class="form-text">The data source field name. It must be unique within the
+            data source.</div>
+        <div class="valid-feedback"> Looks good! </div>
+    </div>
+    <div class="col-4">
+
+        <label for="data-source-field-type" class="form-label">State</label>
+        <select class="form-select" id="data-source-field-type" name="data-source-field-type"
+            aria-describedby="data-source-field-type-help">
+            <option value="Currency">Currency</option>
+            <option value="Date">Date</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Text" selected>Text</option>
+        </select>
+        <div id="data-source-field-type-help" class="form-text">The data type expected for the field.</div>
+    </div>
+    <div class="col-4">
+        <label for="data-source-column" class="form-label">Column</label>
+        <input type="text" class="form-control" id="data-source-column" name="data-source-column"
+            aria-describedby="data-source-column-help">
+        <div id="data-source-column-help" class="form-text">The data source field column in the file.</div>
+        <div class="valid-feedback"> Looks good! </div>
+    </div>
+    <div class="card bg-transparent text-center">
+        <h5 class="card-header ">Field Transformations</h5>
+        <div class="card-body">
+            <h5 class="card-title">Modify the fields with transformations</h5>
+            <p class="card-text">{% include link-button.html classes="" icon="bi-recycle" label="Add New Transformation"
+                %}</p>
+            <p class="card-text">{% include data-sources/manage/fields/transformations.html %}</p>
+            <p class="card-text">{% include link-button.html classes="" icon="bi-recycle" label="Add New Transformation"
+                %}</p>
+        </div>
+    </div>
+</form>

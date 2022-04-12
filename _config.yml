@@ -26,7 +26,7 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   Create data sources for your files, based on a file layout.
   Work with CSV, Fixed Length or Excel files.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/FileProcessor" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: macostavieira
 github_username:  End2EndSystems
