@@ -1,0 +1,26 @@
+<li class="timeline-item mb-5">
+    <span class="timeline-icon"><i class="bi bi-check2"></i></span>
+    <h5 class="fw-bold">Set - Arbitrary sets a value to the input value</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="transformation-set-value"
+                                name="transformation-set-value" aria-describedby="transformation-set-value-help"
+                                placeholder="Value">
+                            <label for="transformation-set-value">Value</label>
+                            <div id="transformation-set-value-help" class="form-text">
+                                The value used to set the input value
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
+        </div>
+    </div>
+    {% include data-sources/manage/fields/add-transformation-button.html %}
+</li>

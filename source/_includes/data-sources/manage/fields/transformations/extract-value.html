@@ -1,0 +1,38 @@
+<li class="timeline-item mb-5">
+    <span class="timeline-icon"><i class="bi bi-box-arrow-up"></i></span>
+    <h5 class="fw-bold">Extract - Used to extract a value from the input value</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="transformation-extract-start-with"
+                                name="transformation-extract-start-with"
+                                aria-describedby="transformation-extract-start-with-help" placeholder="Value">
+                            <label for="transformation-extract-start-with">From</label>
+                            <div id="transformation-extract-start-with-help" class="form-text">
+                                The value used to be replaced
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="transformation-extract-length"
+                                name="transformation-extract-length" aria-describedby="transformation-extract-length-help"
+                                placeholder="Value">
+                            <label for="transformation-extract-length">Length</label>
+                            <div id="transformation-extract-length-help" class="form-text">
+                                The value used to be replaced
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
+        </div>
+    </div>
+    {% include data-sources/manage/fields/add-transformation-button.html %}
+</li>

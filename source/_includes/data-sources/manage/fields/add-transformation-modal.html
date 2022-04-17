@@ -1,0 +1,27 @@
+<div class="modal fade" id="chooseTransformationModal" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="chooseTransformationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chooseTransformationModalLabel">Choose a transformation</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <nav class="nav nav-pills justify-content-center d-grid gap-2 d-flex mx-auto">
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-check2" label="Set Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-scissors" label="Trim Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-box-arrow-up" label="Extract Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-circle" label="If Value Empty" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-arrow-repeat" label="Replace Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-slash" label="Divide Value By" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-arrow-clockwise" label="From Value To" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-arrow-left-right" label="Left Or Right" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-calendar2" label="Date Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-signpost-split" label="Split Value" %}
+                    {% include button.html classes="col-4 gap-3" use-splitter="true" extra-attributes='data-bs-dismiss="modal"' icon="bi-search" label="Search Value For" %}
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

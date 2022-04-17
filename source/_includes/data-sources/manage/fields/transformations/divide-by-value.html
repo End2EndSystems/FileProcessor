@@ -1,0 +1,26 @@
+<li class="timeline-item mb-5">
+    <span class="timeline-icon"><i class="bi bi-slash"></i></span>
+    <h5 class="fw-bold">Divide By - Divide the value by a value</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="transformation-divide-by-value"
+                                name="transformation-divide-by-value" aria-describedby="transformation-divide-by-value-help"
+                                placeholder="Value">
+                            <label for="transformation-divide-by-value">Value</label>
+                            <div id="transformation-divide-by-value-help" class="form-text">
+                                The value use to divide the input value
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
+        </div>
+    </div>
+    {% include data-sources/manage/fields/add-transformation-button.html %}
+</li>

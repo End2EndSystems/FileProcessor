@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <div class="card bg-transparent ">
+                <div class="card border-primary bg-transparent ">
                     <div class="card-header">
                         <h3>Step 1</h3>
                     </div>
@@ -15,7 +15,7 @@
                         <p>Add transformations for the fields.</p>
                         </p>
                     </div>
-                    {%- assign url = 'files/data-sources' | prepend: site.baseurl -%}
+                    {%- assign url = '/files/data-sources' | prepend: site.baseurl -%}
                     {%
                         include link-button.html
                         icon="bi-file-earmark"
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-transparent text-white">
+                <div class="card border-primary bg-transparent text-white">
                     <div class="card-header">
                         <h3>Step 2</h3>
                     </div>
@@ -40,7 +40,7 @@
                         <p>Follow the process, see error messages.</p>
                         </p>
                     </div>
-                    {%- assign url = 'files/uploads' | prepend: site.baseurl -%}
+                    {%- assign url = '/files/uploads' | prepend: site.baseurl -%}
                     {%
                         include link-button.html
                         icon="bi-cloud-upload"
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-transparent text-white">
+                <div class="card border-primary bg-transparent text-white">
                     <div class="card-header">
                         <h3>Step 3</h3>
                     </div>
@@ -62,7 +62,7 @@
                         <p>Download a final result in a csv file.</p>
                         </p>
                     </div>
-                    {%- assign url = 'files/results' | prepend: site.baseurl -%}
+                    {%- assign url = '/files/results' | prepend: site.baseurl -%}
                     {%
                         include link-button.html
                         icon="bi-file-earmark-check"

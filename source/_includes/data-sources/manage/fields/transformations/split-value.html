@@ -1,0 +1,38 @@
+<li class="timeline-item mb-5">
+    <span class="timeline-icon"><i class="bi bi-signpost-split"></i></span>
+    <h5 class="fw-bold">Split - Separate the input value by a splitter and get the value from the position</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="transformation-split-splitter"
+                                name="transformation-split-splitter" aria-describedby="transformation-split-splitter-help"
+                                placeholder="Value">
+                            <label for="transformation-split-splitter">Splitter</label>
+                            <div id="transformation-split-splitter-help" class="form-text">
+                                The value used to split
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="transformation-split-position"
+                                name="transformation-split-position" aria-describedby="transformation-split-position-help"
+                                placeholder="Value">
+                            <label for="transformation-split-position">Position</label>
+                            <div id="transformation-split-position-help" class="form-text">
+                                The position to use
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
+        </div>
+    </div>
+    {% include data-sources/manage/fields/add-transformation-button.html %}
+</li>
