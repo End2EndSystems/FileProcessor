@@ -7,7 +7,7 @@ title: Upload Files
 permalink: files/uploads/
 ---
 
-Here you can upload you file to be processed
+Upload file(s), if found a data source based on file name process the file(s).
 
 {% include upload-files/upload.html %}
 
