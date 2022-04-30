@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-secondary" aria-label="File Process nav bar">
+<nav class="navbar navbar-expand-sm navbar-dark" aria-label="File Process nav bar">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <div class="container-fluid">
-        <a class="navbar-brand text-dark" rel="author" href="{{ '/'' | relative_url }}">
+        <a class="navbar-brand" rel="author" href="{{ '/'' | relative_url }}">
            <b>{{ site.title | escape }}</b>
         </a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+        <button class="navbar-toggler collapsed border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
             aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,7 +16,7 @@
                 {%- assign my_page = site.pages | where: "path", path | first -%}
                 {%- if my_page.title -%}
                 <li class="nav-item">
-                    <a class="nav-link active text-dark" aria-current="page" href="{{ my_page.url | relative_url }}">
+                    <a class="nav-link active" aria-current="page" href="{{ my_page.url | relative_url }}">
                         {{ my_page.title | escape }}
                     </a>
                 </li>
