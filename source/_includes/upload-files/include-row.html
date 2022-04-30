@@ -8,11 +8,12 @@
         const replaceTpl = (name, size) => tplFileDetails.innerHTML.replace("{name}", name).replace("{size}", size);
         const updateFilesNumber = () => lblTotalFiles.innerHTML = fileDetails.children.length;
 
-        fsSelectFiles.addEventListener("change", function fnFileDetails() {
+        btnAddFiles.addEventListener("click", function fnFileDetails() {
             [...fsSelectFiles.files]
                 .forEach(file => fileDetails.innerHTML += replaceTpl(file.name, file.size));
             updateFilesNumber();
             addRemoveHandler();
+            e.preventDefault();
         });
 
         function addRemoveHandler() {
