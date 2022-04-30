@@ -1,40 +1,38 @@
 <li class="timeline-item mb-5">
-    <span class="timeline-icon">
-        <i class="bi bi-arrow-clockwise"></i>
-    </span>
-
-    <h5 class="fw-bold">From Value To - Replaces a value</h5>
-
-    <div class="card-body row text-dark">
-        <div class="col">
-            <div class="row">
-                <div class="col">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="transformation-replace-from"
-                            name="transformation-replace-from" aria-describedby="transformation-replace-from-help"
-                            placeholder="Value">
-                        <label for="transformation-replace-from">From</label>
-                        <div id="transformation-replace-from-help" class="form-text">
-                            The value used to be replaced
+    <span class="timeline-icon"><i class="bi bi-arrow-clockwise"></i></span>
+    <h5 class="fw-bold">IF Empty - If the input value is empty use another data source</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="transformation-replace-from"
+                                name="transformation-replace-from" aria-describedby="transformation-replace-from-help"
+                                placeholder="Value">
+                            <label for="transformation-replace-from">From</label>
+                            <div id="transformation-replace-from-help" class="form-text">
+                                The value used to be replaced
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
                         </div>
-                        <div class="valid-feedback"> Looks good! </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="transformation-replace-to"
-                            name="transformation-replace-to" aria-describedby="transformation-replace-to-help"
-                            placeholder="Value">
-                        <label for="transformation-replace-to">To</label>
-                        <div id="transformation-replace-to-help" class="form-text">
-                            The value used to replace
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="transformation-replace-to"
+                                name="transformation-replace-to" aria-describedby="transformation-replace-to-help"
+                                placeholder="Value">
+                            <label for="transformation-replace-to">To</label>
+                            <div id="transformation-replace-to-help" class="form-text">
+                                The value used to replace
+                            </div>
+                            <div class="valid-feedback"> Looks good! </div>
                         </div>
-                        <div class="valid-feedback"> Looks good! </div>
                     </div>
                 </div>
             </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
         </div>
-        {% include data-sources/manage/fields/transformations/output-result.html %}
     </div>
     {% include data-sources/manage/fields/add-transformation-button.html %}
 </li>

@@ -1,24 +1,22 @@
-<div class="card border-primary bg-dark">
-    <div class="card-header row">
-        <div class="col"><i class="bi bi-circle"></i> From To Value - If the input value is empty use another data source
-            field configured.
-        </div>
-        <div class="col-4">Output result</div>
-    </div>
-    <div class="card-body row text-dark">
-        <div class="col">
-            <div class="row">
-                <div class="col">
-                    <select class="form-select" aria-label="Select the Data Source Field to Execute">
-                        <option selected>Select a data source field</option>
-                        <option value="1">Data Source Field One</option>
-                        <option value="2">Data Source Field Two</option>
-                        <option value="3">Data Source Field Three</option>
-                    </select>
+<li class="timeline-item mb-5">
+    <span class="timeline-icon"><i class="bi bi-circle"></i></span>
+    <h5 class="fw-bold">From To Value - If the input value is empty use another data source field configured</h5>
+    <div class="card border-primary bg-dark">
+        <div class="card-body row text-dark">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select" aria-label="Select the Data Source Field to Execute">
+                            <option selected>Select a data source field</option>
+                            <option value="1">Data Source Field One</option>
+                            <option value="2">Data Source Field Two</option>
+                            <option value="3">Data Source Field Three</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+            {% include data-sources/manage/fields/transformations/output-result.html %}
         </div>
-        {% include data-sources/manage/fields/transformations/output-result.html %}
     </div>
-</div>
-{% include data-sources/manage/fields/add-transformation-button.html %}
+    {% include data-sources/manage/fields/add-transformation-button.html %}
+</li>
