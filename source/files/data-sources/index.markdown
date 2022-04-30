@@ -13,16 +13,8 @@ Work with CSV, Fixed Length or Excel files.
 
 Change the final value of fields using the transformations.
 
-{%
- include button.html
- icon="bi-file-earmark-plus"
- label="Add New Data Source"
-%}
+{% include link-button.html icon="bi-file-earmark-plus" label="Add New Data Source" %}
 
 {% include data-sources/list.html %}
 
-{%
- include button.html
- icon="bi-file-earmark-plus"
- label="Add New Data Source"
-%}
+{% include link-button.html icon="bi-file-earmark-plus" label="Add New Data Source" %}

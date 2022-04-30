@@ -8,5 +8,3 @@ permalink: /files/data-sources/Csv-File/
 ---
 
 {% include data-sources/manage/wizard-data-source.html %}
-
-{% include link-button.html icon="bi-arrow-left-short" label="Return to Data Sources" url="/files/data-sources" %}
