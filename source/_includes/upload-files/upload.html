@@ -1,12 +1,13 @@
-<form action="" method="post" id="form-upload-file">
-    <p>
-        <input type="file" id="fs-select-files" name="fs-select-files" multiple="multiple" />
-    </p>
-    <p>
-        <button id="btn-add-files" type="button">Add files to upload</button>
-    </p>
-</form>
-<p id="all-upload-file-details">
-    <label for="txt-total-files">Total Files: </label>
-    <b id="lbl-total-files">4</b>
-</p>
+<div class="card border-primary bg-dark">
+    <div class="card-body row">
+        <div class="col">
+            <form action="" method="post" id="form-upload-file">
+                <label for="fs-select-files" class="form-label">Select files to upload</label>
+                <input class="form-control" type="file" id="fs-select-files" name="fs-select-files" multiple="multiple"
+                    aria-describedby="fs-select-files-help" />
+                <div id="fs-select-files-help" class="form-text">The selected files to be uploaded.</div>
+                <div class="valid-feedback"> Looks good! </div>
+            </form>
+        </div>
+    </div>
+</div>
