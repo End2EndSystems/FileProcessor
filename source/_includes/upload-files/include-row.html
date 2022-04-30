@@ -10,11 +10,16 @@
 
         btnAddFiles.addEventListener("click", function fnFileDetails() {
             [...fsSelectFiles.files]
-                .forEach(file => fileDetails.innerHTML += replaceTpl(file.name, file.size));
+                .forEach(tryAddFile);
             updateFilesNumber();
             addRemoveHandler();
             e.preventDefault();
         });
+
+        function tryAddFile(file) {
+            if (fileDetails.innerHTML.indexOf(file.name) == -1)
+                fileDetails.innerHTML += replaceTpl(file.name, file.size)
+        }
 
         function addRemoveHandler() {
             const links = document.querySelectorAll("tbody a");
