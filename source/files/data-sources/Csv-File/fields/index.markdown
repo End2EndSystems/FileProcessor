@@ -4,7 +4,7 @@
 
 layout: page
 title: Data Source - Csv File - Fields
-permalink: /files/data-sources/Csv-File/Fields
+permalink: /files/data-sources/Csv-File/Fields/
 ---
 
 {% include data-sources/manage/fields/wizard-data-source-fields.html %}

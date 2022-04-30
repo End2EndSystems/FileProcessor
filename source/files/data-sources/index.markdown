@@ -4,7 +4,7 @@
 
 layout: page
 title: Data Sources
-permalink: files/data-sources
+permalink: files/data-sources/
 ---
 
 Create data sources for your files, based on a file layout.
