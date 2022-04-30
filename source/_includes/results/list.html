@@ -1,0 +1,28 @@
+<div class="card border-primary bg-dark">
+    <div class="card-body row text-dark">
+        <div class="col">
+            <table class="table table-dark table-striped table-hover border-primary">
+                <thead>
+                    <tr>
+                        <th>Data source</th>
+                        <th>Date process</th>
+                        <th># Files</th>
+                        <th style="text-align: center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Csv-File</td>
+                        <td><time datetime="2022-04-03T17:22:13">30/04/2022 17:22</time></td>
+                        <td>3</td>
+                        <td style="text-align: center">
+                          {% include link-button.html icon="bi-pen" label="Edit" %}
+                          {% include link-button.html icon="bi-cloud-arrow-down" label="Download" %}
+                          {% include link-button.html icon="bi-folder-minus" label="Delete" %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

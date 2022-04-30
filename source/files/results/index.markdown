@@ -19,3 +19,5 @@ The available options to download result files are:
 * CSV
 
 Stay tunned for more type of files
+
+{% include results/list.html %}
