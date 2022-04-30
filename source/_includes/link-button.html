@@ -2,10 +2,12 @@
 {%- assign useSplitter = include.splitter | default: false -%}
 {%- assign extra-attributes = include.extra-attributes -%}
 {%- assign label = include.label | prepend: " " -%}
+{%- assign role = include.role | default: "button" -%}
 
 
-<a href="{{ url }}" class="btn btn-outline-primary{% unless include.classes == empty %} {{ include.classes }}{% endunless %}" role="button" {% unless extra-attributes==empty %} {{
-    extra-attributes }}{% endunless %}>
+<a href="{{ url }}"
+class="btn btn-outline-primary{% unless include.classes == empty %} {{ include.classes }}{% endunless %}"
+role="{{ role }}"{% unless extra-attributes==empty %} {{ extra-attributes }}{% endunless %}>
     {% unless include.icon == empty %}<i class="bi {{ include.icon }}"></i>{% endunless %}
     {%- if useSplitter -%}<hr />{%- endif -%} 
     {{ label }}
