@@ -7,7 +7,7 @@
 
 
 <button role="button" type="{{ btn-type }}"
-class="btn btn-outline-primary{% unless include.classes == empty %} {{ include.classes }}{% endunless %}"
+class="btn btn-outline-info{% unless include.classes == empty %} {{ include.classes }}{% endunless %}"
 
 {% unless action==empty %} formaction="{{ action }}"{% endunless %}
 {% unless form==empty %} form="{{ form }}" {% endunless %}
