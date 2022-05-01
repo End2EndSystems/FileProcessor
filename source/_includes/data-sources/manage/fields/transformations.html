@@ -1,46 +1,55 @@
-<!-- Section: Timeline -->
-<section class="">
-  <style>
-    .timeline-with-icons {
-      border-left: 1px solid hsl(0, 0%, 90%);
-      position: relative;
-      list-style: none;
-    }
+<style>
+  .timeline-with-icons {
+    border-left-width: 1px;
+    border-left-style: solid;
+    position: relative;
+    list-style: none;
+    margin: 15px;
+  }
 
-    .timeline-with-icons .timeline-item {
-      position: relative;
-    }
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    /* 40px height (20+20) */
+    border-left: 20px solid green;
+    position: absolute;
+    right: -20px;
+  }
 
-    .timeline-with-icons .timeline-item:after {
-      position: absolute;
-      display: block;
-      top: 0;
-    }
+  .timeline-with-icons .timeline-item {
+    position: relative;
+  }
 
-    .timeline-with-icons .timeline-icon {
-      position: absolute;
-      left: -48px;
-      background-color: hsl(217, 88.2%, 90%);
-      color: hsl(217, 88.8%, 35.1%);
-      border-radius: 50%;
-      height: 31px;
-      width: 31px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
+  .timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
 
-  <ul class="timeline-with-icons">
-    {% include data-sources/manage/fields/transformations/set-value.html %}
-    {% include data-sources/manage/fields/transformations/replace-value.html %}
-    {% include data-sources/manage/fields/transformations/divide-by-value.html %}
-    {% include data-sources/manage/fields/transformations/extract-value.html %}
-    {% include data-sources/manage/fields/transformations/split-value.html %}
-    {% include data-sources/manage/fields/transformations/trim-value.html %}
-    {% include data-sources/manage/fields/transformations/date-value.html %}
-    {% include data-sources/manage/fields/transformations/if-empty-value.html %}
-    {% include data-sources/manage/fields/transformations/left-right-value.html %}
-  </ul>
-</section>
-<!-- Section: Timeline -->
+  .timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<ul class="timeline-with-icons">
+  {% include data-sources/manage/fields/transformations/set-value.html %}
+  {% include data-sources/manage/fields/transformations/replace-value.html %}
+  {% include data-sources/manage/fields/transformations/divide-by-value.html %}
+  {% include data-sources/manage/fields/transformations/extract-value.html %}
+  {% include data-sources/manage/fields/transformations/split-value.html %}
+  {% include data-sources/manage/fields/transformations/trim-value.html %}
+  {% include data-sources/manage/fields/transformations/date-value.html %}
+  {% include data-sources/manage/fields/transformations/if-empty-value.html %}
+  {% include data-sources/manage/fields/transformations/left-right-value.html %}
+</ul>
