@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Fonte de Dados - Arquivo CSV | FileProcessor</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Fonte de Dados - Arquivo CSV" />
+<meta name="author" content="End2bnƎ Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Create data sources for your files, based on a file layout. Work with CSV, Fixed Length or Excel files." />
+<meta property="og:description" content="Create data sources for your files, based on a file layout. Work with CSV, Fixed Length or Excel files." />
+<link rel="canonical" href="/FileProcessor/files/data-sources/Csv-File/" />
+<meta property="og:url" content="/FileProcessor/files/data-sources/Csv-File/" />
+<meta property="og:site_name" content="FileProcessor" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fonte de Dados - Arquivo CSV" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"End2bnƎ Systems"},"description":"Create data sources for your files, based on a file layout. Work with CSV, Fixed Length or Excel files.","headline":"Fonte de Dados - Arquivo CSV","url":"/FileProcessor/files/data-sources/Csv-File/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- <link rel="stylesheet" href="/FileProcessor/assets/css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="/FileProcessor/feed.xml" title="FileProcessor" />
+</head><body class="bg-dark text-white"><nav class="navbar navbar-expand-sm navbar-dark" aria-label="File Process nav bar"><div class="container-fluid">
+        <a class="navbar-brand" rel="author" href="/FileProcessor/">
+           <b>FileProcessor</b>
+        </a>
+        <button class="navbar-toggler collapsed border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+            aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarItems">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0"><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/FileProcessor/files/data-sources/">
+                        Fonte de Dados
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/FileProcessor/files/uploads/">
+                        Envio de arquivos
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/FileProcessor/files/results/">
+                        Arquivos Processados
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/FileProcessor/about/">
+                        About
+                    </a>
+                </li></ul>
+        </div>
+    </div>
+</nav><main class="container py-5" aria-label="Content">
+    <h2 class=" text-center post-title">Fonte de Dados - Arquivo CSV</h2>
+<div class="container">
+    <ul class="nav nav-pills nav-justified" id="data-source-configuration" role="tablist">
+    <li class="nav-item btn btn-outline-info" role="presentation">
+        <a href="#" class="btn btn-outline-info nav-link active  rounded-pill" role="tab">
+    <i class="bi bi-file-earmark"></i> Informações Básicas
+</a>
+    </li>
+    <li class="nav-item btn btn-outline-info" role="presentation">
+        <a href="Fields" class="btn btn-outline-info nav-link" role="tab">
+    <i class="bi bi-file-earmark-ruled"></i> Campos do arquivo
+</a>
+    </li>
+</ul>
+<div class="tab-content" id="data-source-configuration-tabs">
+    <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="basic-info-tab">
+        <hr />
+<div class="mb-3">
+    <label for="data-source-name" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="data-source-name" name="data-source-name" aria-describedby="data-source-name-help" />
+    <div id="data-source-name-help" class="form-text">O nome da fonte de dados. Vai verificar se há nomes únicos.</div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+<div class="mb-3">
+    <label for="data-source-file-pattern" class="form-label">Padrão de arquivo</label>
+    <input type="text" class="form-control" id="data-source-file-pattern" name="data-source-file-pattern" aria-describedby="data-source-file-pattern-help" />
+    <div id="data-source-file-pattern-help" class="form-text">O padrão do arquivo de origem de dados. Isso é usado para verificar o arquivo carregado.</div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+
+<ul class="nav nav-pills nav-justified" id="data-source-type-configuration" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a href="#" class="btn btn-outline-info nav-link active" role="tab" id="csv-tab" data-bs-toggle="tab" data-bs-target="#csv-fields" type="button" aria-controls="home" aria-selected="true">
+    <i class="bi bi-filetype-csv"></i> CSV
+</a>
+    </li>
+    <!-- <li class="nav-item" role="presentation">
+        <a href="#"
+class="btn btn-outline-info nav-link"
+role="button" id="excel-tab" data-bs-toggle="tab" data-bs-target="#excel-fields" type="button"
+        role="tab" aria-controls="excel-tab" aria-selected="false">
+    <i class="bi bi-filetype-exe"></i> Excel
+</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a href="#"
+class="btn btn-outline-info nav-link"
+role="button" id="fixed-length-tab" data-bs-toggle="tab" data-bs-target="#fixed-length-fields" type="button"
+        role="tab" aria-controls="fixed-length-tab" aria-selected="false">
+    <i class="bi bi-filetype-txt"></i> Largura Fixa
+</a>
+    </li> -->
+</ul>
+<div class="tab-content py-3" id="data-source-type-tabs">
+    <div class="tab-pane fade show active" id="csv-fields" role="tabpanel" aria-labelledby="csv-tab">
+        <div class="mb-3">
+    <label for="data-source-csv-separator-char" class="form-label">Caractere separador</label>
+    <input type="text" class="form-control" id="data-source-csv-separator-char" name="data-source-csv-separator-char" aria-describedby="data-source-csv-separator-char-help" value="," required="" />
+    <div id="data-source-csv-separator-char-help" class="form-text">
+        O caractere usado para separar os dados no arquivo CSV. Por padrão é ','.
+    </div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+<div class="mb-3">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="data-source-csv-ignore-header" name="data-source-csv-ignore-header" />
+        <label class="form-check-label" for="data-source-csv-ignore-header">Deve ignorar a primeira linha do arquivo</label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <a href="/FileProcessor/files/data-sources/" class="btn btn-outline-info " role="button">
+    <i class="bi bi-arrow-left-short"></i> Voltar a lista de Fonte de Dados
+</a>
+        <button role="button" type="submit" class="btn btn-outline-info ">
+<i class="bi include.icon"></i>Salvar Como CSV
+</button>
+    </div>
+</div>
+    </div>
+    <div class="tab-pane fade" id="excel-fields" role="tabpanel" aria-labelledby="excel-tab">
+        <div class="mb-3">
+    <label for="data-source-excel-sheet-name" class="form-label">Sheet Name</label>
+    <input type="text" class="form-control" id="data-source-excel-sheet-name" name="data-source-excel-sheet-name" aria-describedby="data-source-excel-sheet-name-help" />
+    <div id="data-source-excel-sheet-name-help" class="form-text">
+        The name of the sheet to look for in the spread-sheet.
+    </div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+<div class="mb-3">
+    <label for="data-source-excel-start-row" class="form-label">Start Row</label>
+    <input type="number" class="form-control" id="data-source-excel-start-row" name="data-source-excel-start-row" aria-describedby="data-source-excel-start-row-help" value="1" required="" />
+    <div id="data-source-excel-start-row-help" class="form-text">
+        The number of the row to start read.
+    </div>
+    <div class="valid-feedback"> Looks good! </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <a href="/FileProcessor/files/data-sources/" class="btn btn-outline-info " role="button">
+    <i class="bi bi-arrow-left-short"></i> Voltar a lista de Fonte de Dados
+</a>
+        <button role="button" type="submit" class="btn btn-outline-info ">
+<i class="bi include.icon"></i>Save as Excel
+</button>
+    </div>
+</div>
+    </div>
+    <div class="tab-pane fade" id="fixed-length-fields" role="tabpanel" aria-labelledby="fixed-length-tab">
+        <div class="row">
+    <div class="col">
+        <a href="/FileProcessor/files/data-sources/" class="btn btn-outline-info " role="button">
+    <i class="bi bi-arrow-left-short"></i> Voltar a lista de Fonte de Dados
+</a>
+        <button role="button" type="submit" class="btn btn-outline-info ">
+<i class="bi include.icon"></i>Save as Fixed Length
+</button>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+</div>
+  </main><footer class="bd-footer">
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-auto border-end">
+                <a class="d-inline-flex align-items-center mb-2 link-secondary" rel="author" aria-label="site.title"
+                    href="/FileProcessor/">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg> -->
+                    <span class="fs-5">FileProcessor</span>
+                </a>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">Create data sources for your files, based on a file layout. Work with CSV, Fixed Length or Excel files.</li>
+                    <li class="mb-2">Code licensed <a class="link-secondary" href="#" target="_blank" rel="license noopener">APACHE</a>.</li>
+                    <li class="mb-2">Proudly made by <a class="link-secondary" href="mailto:matheus.costa.vieira@gmail.com">
+                            End2bnƎ Systems</a></li>
+                    <li class="mb-2">Currently version <b>0.0.1</b>.</li>
+                </ul>
+            </div>
+            <div class="col-auto border-end">
+                <h5>Links</h5>
+                <ul class="list-unstyled"><li class="mb-2"><a class="link-secondary" href="/FileProcessor/files/data-sources/">
+                            Fonte de Dados</a>
+                    </li><li class="mb-2"><a class="link-secondary" href="/FileProcessor/files/uploads/">
+                            Envio de arquivos</a>
+                    </li><li class="mb-2"><a class="link-secondary" href="/FileProcessor/files/results/">
+                            Arquivos Processados</a>
+                    </li><li class="mb-2"><a class="link-secondary" href="/FileProcessor/about/">
+                            About</a>
+                    </li></ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script></body>
+
+</html>
