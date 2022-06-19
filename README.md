@@ -11,4 +11,4 @@ Configure a file template (CSV, Excel and Fixed Length)
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve`
 
-Access, [localhost:4000](http://localhost:4000)
+Access, [http://localhost:4000/FileProcessor/](http://localhost:4000/FileProcessor/)

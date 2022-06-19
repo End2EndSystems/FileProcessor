@@ -1,17 +1,22 @@
 <li class="timeline-item mb-2">
     <span class="timeline-icon"><i class="bi bi-circle"></i></span>
-    <h5 class="fw-bold">IF Empty - If the input value is empty use another data source</h5>
+    <h5 class="fw-bold">Se Vazio - Se o valor de entrada estiver vazio use outro campo</h5>
     <div class="card border-info bg-dark">
         <div class="card-body row text-dark">
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <select class="form-select" aria-label="Select the Data Source Field to Execute">
-                            <option selected>Select a data source field</option>
-                            <option value="1">Data Source Field One</option>
-                            <option value="2">Data Source Field Two</option>
-                            <option value="3">Data Source Field Three</option>
+                        <select class="form-select" aria-label="Select the Data Source Field to Execute"
+                        id="transformation-if-empty" name="transformation-if-empty"
+                        aria-describedby="transformation-if-emp-help">
+                            <option selected>Selecione um campo</option>
+                            <option value="1">Campo Um</option>
+                            <option value="2">Campo Dois</option>
+                            <option value="3">Campo Três</option>
                         </select>
+                        <div id="transformation-if-emp-help" class="form-text">
+                            O campo selecionado para se executado
+                        </div>
                     </div>
                 </div>
             </div>

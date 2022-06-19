@@ -3,21 +3,20 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Files Results
+title: Arquivos Processados
 permalink: files/results/
 ---
 
-After the file is processed this would be the last step before download the final result file.
+Depois que o arquivo for processado, esta seria a última etapa antes de baixar o arquivo de resultado final.
 
-The batch of files will be condensed in one result file.
+O lote de arquivos será condensado em um arquivo de resultado.
 
-Here the final result of files could be changed before download it
+Aqui o resultado final dos arquivos pode ser alterado antes de baixá-lo
 
-The available options to download result files are:
+As opções disponíveis para baixar arquivos de resultados são:
 
 * Fixed Length
 * CSV
-
-Stay tunned for more type of files
+* Mais tipos de arquivos podem ser disponibilizados
 
 {% include results/list.html %}

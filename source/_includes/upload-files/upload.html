@@ -2,13 +2,13 @@
     <div class="card-body row">
         <div class="col">
             <form action="" method="post" id="form-upload-file">
-                <label for="fs-select-files" class="form-label">Select files to upload</label>
+                <label for="fs-select-files" class="form-label">Selecione os arquivos a serem submetidos</label>
                 <div class="input-group mb-3">
                     <input class="form-control" type="file" id="fs-select-files" name="fs-select-files"
                         multiple="multiple" aria-describedby="fs-select-files-help" />
-                    {% include link-button.html icon="bi-cloud-arrow-up" label="Upload" extra-attributes='id="btn-add-files"' %}
+                    {% include link-button.html icon="bi-cloud-arrow-up" label="Submeter" extra-attributes='id="btn-add-files"' %}
                 </div>
-                <div id="fs-select-files-help" class="form-text">The selected files to be uploaded.</div>
+                <div id="fs-select-files-help" class="form-text">Os arquivos a serem submetidos.</div>
                 <div class="valid-feedback"> Looks good! </div>
             </form>
         </div>

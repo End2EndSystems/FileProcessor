@@ -1,16 +1,16 @@
+<hr />
 <div class="mb-3">
-    <label for="data-source-name" class="form-label">Name</label>
+    <label for="data-source-name" class="form-label">Nome</label>
     <input type="text" class="form-control" id="data-source-name" name="data-source-name"
         aria-describedby="data-source-name-help">
-    <div id="data-source-name-help" class="form-text">The data source name. It wil check for unique names.</div>
+    <div id="data-source-name-help" class="form-text">O nome da fonte de dados. Vai verificar se há nomes únicos.</div>
     <div class="valid-feedback"> Looks good! </div>
 </div>
 <div class="mb-3">
-    <label for="data-source-file-pattern" class="form-label">File Pattern</label>
+    <label for="data-source-file-pattern" class="form-label">Padrão de arquivo</label>
     <input type="text" class="form-control" id="data-source-file-pattern" name="data-source-file-pattern"
         aria-describedby="data-source-file-pattern-help">
-    <div id="data-source-file-pattern-help" class="form-text">The data source file pattern. This is used to check the
-        file uploaded.</div>
+    <div id="data-source-file-pattern-help" class="form-text">O padrão do arquivo de origem de dados. Isso é usado para verificar o arquivo carregado.</div>
     <div class="valid-feedback"> Looks good! </div>
 </div>
 
@@ -19,14 +19,14 @@
         {% include link-button.html classes="nav-link active" icon="bi-filetype-csv" label="CSV" extra-attributes='id="csv-tab" data-bs-toggle="tab" data-bs-target="#csv-fields" type="button"
         role="tab" aria-controls="home" aria-selected="true"' %}
     </li>
-    <li class="nav-item" role="presentation">
+    <!-- <li class="nav-item" role="presentation">
         {% include link-button.html classes="nav-link" icon="bi-filetype-exe" label="Excel" extra-attributes='id="excel-tab" data-bs-toggle="tab" data-bs-target="#excel-fields" type="button"
         role="tab" aria-controls="excel-tab" aria-selected="false"' %}
     </li>
     <li class="nav-item" role="presentation">
-        {% include link-button.html classes="nav-link" icon="bi-filetype-txt" label="Fixed Length" extra-attributes='id="fixed-length-tab" data-bs-toggle="tab" data-bs-target="#fixed-length-fields" type="button"
+        {% include link-button.html classes="nav-link" icon="bi-filetype-txt" label="Largura Fixa" extra-attributes='id="fixed-length-tab" data-bs-toggle="tab" data-bs-target="#fixed-length-fields" type="button"
         role="tab" aria-controls="fixed-length-tab" aria-selected="false"' %}
-    </li>
+    </li> -->
 </ul>
 <div class="tab-content py-3" id="data-source-type-tabs">
     <div class="tab-pane fade show active" id="csv-fields" role="tabpanel" aria-labelledby="csv-tab">

@@ -3,8 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Fonte de Dados - Arquivo CSV
-permalink: /files/data-sources/Csv-File/
+title: Transações
+permalink: files/results/transactions
 ---
 
-{% include data-sources/manage/wizard-data-source.html %}
+
+
+{% include transactions/info.html %}
+
+{% include transactions/list.html %}

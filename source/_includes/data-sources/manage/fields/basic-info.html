@@ -1,16 +1,14 @@
 <form>
     <div class="row g3 py-3">
         <div class="col">
-            <label for="data-source-field-name" class="form-label">Name</label>
+            <label for="data-source-field-name" class="form-label">Nome</label>
             <input type="text" class="form-control" id="data-source-field-name" name="data-source-field-name"
                 aria-describedby="data-source-field-name-help">
-            <div id="data-source-field-name-help" class="form-text">The data source field name. It must be unique within
-                the
-                data source.</div>
+            <div id="data-source-field-name-help" class="form-text">O nome do campo de origem dos dados. Deve ser único dentro da fonte de dados.</div>
             <div class="valid-feedback"> Looks good! </div>
         </div>
         <div class="col">
-            <label for="data-source-field-type" class="form-label">Type</label>
+            <label for="data-source-field-type" class="form-label">Tipo</label>
             <select class="form-select" id="data-source-field-type" name="data-source-field-type"
                 aria-describedby="data-source-field-type-help">
                 <option value="Currency">Currency</option>
@@ -18,30 +16,30 @@
                 <option value="Decimal">Decimal</option>
                 <option value="Text" selected>Text</option>
             </select>
-            <div id="data-source-field-type-help" class="form-text">The data type expected for the field.</div>
+            <div id="data-source-field-type-help" class="form-text">O tipo de dados esperado para o campo.</div>
         </div>
         <div class="col-4">
-            <label for="data-source-column" class="form-label">Column</label>
+            <label for="data-source-column" class="form-label">Coluna</label>
             <input type="text" class="form-control" id="data-source-column" name="data-source-column"
                 aria-describedby="data-source-column-help">
-            <div id="data-source-column-help" class="form-text">The data source field column in the file.</div>
+            <div id="data-source-column-help" class="form-text">A coluna de campo de origem de dados no arquivo.</div>
             <div class="valid-feedback"> Looks good! </div>
         </div>
     </div>
-    <h5 class="text-center">Modify the field input value with transformations</h5>
+    <h5 class="text-center">Modifique o valor de entrada de campo com as modificações</h5>
     <div class="col">
-        <label for="transformation-test-input-value" class="form-label">Test Input Value</label>
+        <label for="transformation-test-input-value" class="form-label">Testar Valor de Entrada</label>
         <input type="text" class="form-control" id="transformation-test-input-value"
             name="transformation-test-input-value-value" aria-describedby="transformation-split-value-help">
         <div id="transformation-test-input-value-help" class="form-text">
-            The input value to test transformations
+            O valor de entrada para testar as modificações.
         </div>
         <div class="valid-feedback"> Looks good! </div>
     </div>
     <div class="col">
         {% include data-sources/manage/fields/add-transformation-button.html %}
         {% include data-sources/manage/fields/transformations.html %}
-        {% include data-sources/manage/manage-buttons.html icon="bi-file-earmark-check" label="Save Field" type="submit"
+        {% include data-sources/manage/manage-buttons.html icon="bi-file-earmark-check" label="Salvar Campo" type="submit"
         %}
     </div>
 </form>

@@ -3,18 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Data Sources
+title: Fonte de Dados
 permalink: files/data-sources/
 ---
 
-Create data sources for your files, based on a file layout.
+Crie fontes de dados para seus arquivos, com base em um layout de arquivo.
 
-Work with CSV, Fixed Length or Excel files.
+Trabalhe com arquivos CSV, Fixed Length ou Excel.
 
-Change the final value of fields using the transformations.
+Alterar o valor final dos campos usando as modificações.
 
-{% include link-button.html icon="bi-file-earmark-plus" label="Add New Data Source" %}
+{% include link-button.html icon="bi-file-earmark-plus" label="Nova Fonte de Dados" %}
 
 {% include data-sources/list.html %}
 
-{% include link-button.html icon="bi-file-earmark-plus" label="Add New Data Source" %}
+{% include link-button.html icon="bi-file-earmark-plus" label="Nova Fonte de Dados" %}

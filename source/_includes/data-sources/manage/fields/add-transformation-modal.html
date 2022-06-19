@@ -3,23 +3,25 @@ aria-hidden="true" aria-modal="true" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-dark">
             <div class="modal-header">
-                <h5 class="modal-title" id="chooseTransformationModalLabel">Choose a transformation</h5>
+                <h5 class="modal-title" id="chooseTransformationModalLabel">Selecione uma modificação</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
                 </button>
             </div>
             <div class="modal-body">
                 <nav class="nav nav-pills justify-content-center d-grid gap-5 d-flex mx-auto">
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-check2" label="Set Value" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-scissors" label="Trim Value" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-box-arrow-up" label="Extract Value" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-circle" label="If Empty" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-arrow-repeat" label="Replace Value" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-check2" label="Definir" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-scissors" label="Remover" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-box-arrow-up" label="Extrair" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-circle" label="Se Vazio" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-arrow-repeat" label="Trocar" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-arrow-left-right" label="Esq/Dir" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-calendar2" label="Data" %}
+                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-signpost-split" label="Separar" %}
+                    {% comment %}
                     {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-slash" label="Divide By" %}
                     {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-arrow-clockwise" label="From - To" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-arrow-left-right" label="Left - Right" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-calendar2" label="Date Value" %}
-                    {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-signpost-split" label="Split Value" %}
                     {% include button.html classes="col-md gap-4" use-splitter="true" extra-attributes='tab-index="-1" data-bs-dismiss="modal"' icon="bi-search" label="Search For" %}
+                    {% endcomment %}
                 </nav>
             </div>
         </div>

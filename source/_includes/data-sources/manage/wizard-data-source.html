@@ -1,12 +1,12 @@
 <ul class="nav nav-pills nav-justified" id="data-source-configuration" role="tablist">
     <li class="nav-item btn btn-outline-info" role="presentation">
-        {% include link-button.html classes="nav-link active  rounded-pill" icon="bi-file-earmark" label="Basic information" role="tab" %}
+        {% include link-button.html classes="nav-link active  rounded-pill" icon="bi-file-earmark" label="Informações Básicas" role="tab" %}
     </li>
     <li class="nav-item btn btn-outline-info" role="presentation">
-        {% include link-button.html classes="nav-link" icon="bi-file-earmark-ruled" label="Form Fields" url="Fields" role="tab" %}
+        {% include link-button.html classes="nav-link" icon="bi-file-earmark-ruled" label="Campos do arquivo" url="Fields" role="tab" %}
     </li>
 </ul>
-<div class="tab-content py-3" id="data-source-configuration-tabs">
+<div class="tab-content" id="data-source-configuration-tabs">
     <div class="tab-pane fade show active" id="basic-info" role="tabpanel" aria-labelledby="basic-info-tab">
         {% include data-sources/manage/basic-info.html %}
     </div>

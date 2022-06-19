@@ -3,11 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Upload Files
+title: Envio de arquivos
 permalink: files/uploads/
 ---
 
-Upload file(s), if found a data source based on file name process the file(s).
+Envio de arquivos(s).
+
+Se o nome do arquivo for compatível com uma fonte de dados o mesmo será processado conforme a configuração definida.
 
 {% include upload-files/upload.html %}
 

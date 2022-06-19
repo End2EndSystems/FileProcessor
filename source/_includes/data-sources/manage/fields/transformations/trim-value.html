@@ -1,6 +1,6 @@
 <li class="timeline-item mb-2">
     <span class="timeline-icon"><i class="bi bi-scissors"></i></span>
-    <h5 class="fw-bold">Trim - Remove leading, trailing or both white-space characters from the input value</h5>
+    <h5 class="fw-bold">Remover - Remova caracteres do início, fim ou de qualquer lugar do espaço branco do valor de entrada</h5>
     <div class="card border-info bg-dark">
         <div class="card-body row text-dark">
             <div class="col">
@@ -8,21 +8,21 @@
                     <div class="col d-grid gap-2 d-inline mx-auto">
                         <input type="radio" class="btn-check" id="transformation-trim-start"
                             name="transformation-trim" />
-                        <label class="btn btn-outline-info" for="transformation-trim-start">Leading</label>
+                        <label class="btn btn-outline-info" for="transformation-trim-start">Início</label>
                         <input type="radio" class="btn-check" id="transformation-trim-both" name="transformation-trim"
                             checked="checked" />
-                        <label class="btn btn-outline-info" for="transformation-trim-both">Both</label>
+                        <label class="btn btn-outline-info" for="transformation-trim-both">Qualquer</label>
                         <input type="radio" class="btn-check" id="transformation-trim-end" name="transformation-trim" />
-                        <label class="btn btn-outline-info" for="transformation-trim-end">Trailing</label>
+                        <label class="btn btn-outline-info" for="transformation-trim-end">Fim</label>
                     </div>
                     <div class="col">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="transformation-trim-value"
                                 name="transformation-trim-value" aria-describedby="transformation-trim-value-help"
                                 placeholder="Type some value">
-                            <label for="transformation-trim-value">To remove</label>
+                            <label for="transformation-trim-value">A Remover</label>
                             <div id="transformation-trim-value-help" class="form-text">
-                                The value used to trim the string (empty will remove white-space characters)
+                                O valor usado para aparar a sequência (vazio removerá caracteres de espaço)
                             </div>
                             <div class="valid-feedback"> Looks good! </div>
                         </div>

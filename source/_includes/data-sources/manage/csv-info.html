@@ -1,9 +1,9 @@
 <div class="mb-3">
-    <label for="data-source-csv-separator-char" class="form-label">Separator Character</label>
+    <label for="data-source-csv-separator-char" class="form-label">Caractere separador</label>
     <input type="text" class="form-control" id="data-source-csv-separator-char" name="data-source-csv-separator-char"
         aria-describedby="data-source-csv-separator-char-help" value="," required />
     <div id="data-source-csv-separator-char-help" class="form-text">
-        The character used to separate the data in CSV file. By default is ','.
+        O caractere usado para separar os dados no arquivo CSV. Por padrão é ','.
     </div>
     <div class="valid-feedback"> Looks good! </div>
 </div>
@@ -11,9 +11,8 @@
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="data-source-csv-ignore-header"
             name="data-source-csv-ignore-header" />
-        <label class="form-check-label" for="data-source-csv-ignore-header">Should ignore first line
-            of the file</label>
+        <label class="form-check-label" for="data-source-csv-ignore-header">Deve ignorar a primeira linha do arquivo</label>
     </div>
 </div>
 
-{% include data-sources/manage/manage-buttons.html icon="bi-file-earmark-check" label="Save as CSV" type="submit" form-action="Excel" %}
+{% include data-sources/manage/manage-buttons.html icon="bi-file-earmark-check" label="Salvar Como CSV" type="submit" form-action="Excel" %}

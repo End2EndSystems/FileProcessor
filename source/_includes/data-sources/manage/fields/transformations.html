@@ -44,12 +44,14 @@
 
 <ul class="timeline-with-icons">
   {% include data-sources/manage/fields/transformations/set-value.html %}
+  {% comment %}
   {% include data-sources/manage/fields/transformations/replace-value.html %}
-  {% include data-sources/manage/fields/transformations/divide-by-value.html %}
   {% include data-sources/manage/fields/transformations/extract-value.html %}
   {% include data-sources/manage/fields/transformations/split-value.html %}
   {% include data-sources/manage/fields/transformations/trim-value.html %}
   {% include data-sources/manage/fields/transformations/date-value.html %}
   {% include data-sources/manage/fields/transformations/if-empty-value.html %}
   {% include data-sources/manage/fields/transformations/left-right-value.html %}
+  {% include data-sources/manage/fields/transformations/divide-by-value.html %}
+  {% endcomment %}
 </ul>
